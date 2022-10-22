@@ -8,28 +8,19 @@ struct EventTapController {
     
     static var eventTap: CFMachPort!
     private var eventTapCallback: CGEventTapCallBack = { proxy, type, event, _ in
+        Self.window.setFrameOrigin(CGPoint(x: NSEvent.mouseLocation.x, y: NSEvent.mouseLocation.y))
+        Self.window.orderFrontRegardless()
+
+        Self.popover.show(relativeTo: NSZeroRect, of: Self.window.contentView!, preferredEdge: .maxY)
         
-        
-        
-        print("mouse moved")
-        
-        
-                
         return nil
     }
         
     init() {
         Self.eventTap = setUpEventTap()
         
-        Self.popover.contentSize = NSSize(width: 200, height: 200)
-        Self.popover.animates = true
-        Self.popover.behavior = .semitransient
         Self.popover.contentViewController = NSViewController()
         Self.popover.contentViewController?.view = NSHostingView(rootView: ContentView())
-        Self.window.setFrameOrigin(CGPoint(x: NSEvent.mouseLocation.x, y: NSEvent.mouseLocation.y))
-        Self.window.orderFrontRegardless()
-
-        Self.popover.show(relativeTo: NSZeroRect, of: Self.window.contentView!, preferredEdge: .maxY)
     }
         
     
