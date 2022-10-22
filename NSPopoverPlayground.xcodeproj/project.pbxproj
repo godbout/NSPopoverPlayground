@@ -11,6 +11,9 @@
 		91FE75AD2903C50B00C61A5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE75AC2903C50B00C61A5E /* ContentView.swift */; };
 		91FE75AF2903C50C00C61A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FE75AE2903C50C00C61A5E /* Assets.xcassets */; };
 		91FE75B32903C50C00C61A5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FE75B22903C50C00C61A5E /* Preview Assets.xcassets */; };
+		91FE75BA2903C98800C61A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE75B92903C98800C61A5E /* AppDelegate.swift */; };
+		91FE75BC2903C9EB00C61A5E /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE75BB2903C9EB00C61A5E /* AppCore.swift */; };
+		91FE75BE2903CA1500C61A5E /* EventTapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE75BD2903CA1500C61A5E /* EventTapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		91FE75AE2903C50C00C61A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FE75B02903C50C00C61A5E /* NSPopoverPlayground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSPopoverPlayground.entitlements; sourceTree = "<group>"; };
 		91FE75B22903C50C00C61A5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91FE75B92903C98800C61A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91FE75BB2903C9EB00C61A5E /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		91FE75BD2903CA1500C61A5E /* EventTapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				91FE75AA2903C50B00C61A5E /* NSPopoverPlaygroundApp.swift */,
+				91FE75B92903C98800C61A5E /* AppDelegate.swift */,
+				91FE75BB2903C9EB00C61A5E /* AppCore.swift */,
+				91FE75BD2903CA1500C61A5E /* EventTapController.swift */,
 				91FE75AC2903C50B00C61A5E /* ContentView.swift */,
 				91FE75AE2903C50C00C61A5E /* Assets.xcassets */,
 				91FE75B02903C50C00C61A5E /* NSPopoverPlayground.entitlements */,
@@ -139,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FE75BA2903C98800C61A5E /* AppDelegate.swift in Sources */,
 				91FE75AD2903C50B00C61A5E /* ContentView.swift in Sources */,
+				91FE75BE2903CA1500C61A5E /* EventTapController.swift in Sources */,
+				91FE75BC2903C9EB00C61A5E /* AppCore.swift in Sources */,
 				91FE75AB2903C50B00C61A5E /* NSPopoverPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

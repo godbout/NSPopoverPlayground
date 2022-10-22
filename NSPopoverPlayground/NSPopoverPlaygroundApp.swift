@@ -1,17 +1,15 @@
-//
-//  NSPopoverPlaygroundApp.swift
-//  NSPopoverPlayground
-//
-//  Created by Guillaume Leclerc on 22/10/2022.
-//
-
 import SwiftUI
+
 
 @main
 struct NSPopoverPlaygroundApp: App {
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+
 }

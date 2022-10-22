@@ -1,13 +1,10 @@
-//
-//  ContentView.swift
-//  NSPopoverPlayground
-//
-//  Created by Guillaume Leclerc on 22/10/2022.
-//
-
 import SwiftUI
 
+
 struct ContentView: View {
+    
+    let popover = NSPopover()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -15,12 +12,8 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
+               
         .padding()
     }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }
